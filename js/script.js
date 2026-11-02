@@ -14,12 +14,14 @@ document.addEventListener("DOMContentLoaded", function () {
     folders.forEach(function (folder) {
         folder.addEventListener("click", function (e) {
             e.stopPropagation();
-            var isOpen = folder.classList.contains("active-folder");
+            var isAlreadyActive = folder.classList.contains("active-folder");
+
             folders.forEach(function (f) {
                 f.classList.remove("active-folder");
                 f.style.zIndex = "10";
             });
-            if (!isOpen) {
+
+            if (!isAlreadyActive) {
                 folder.classList.add("active-folder");
                 folder.style.zIndex = "100";
             }
