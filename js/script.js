@@ -12,11 +12,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var folders = document.querySelectorAll(".desktop-item");
     folders.forEach(function (folder) {
-        folder.addEventListener("click", function () {
+        folder.addEventListener("click", function (e) {
+            e.stopPropagation();
+            var isOpen = folder.classList.contains("active-folder");
             folders.forEach(function (f) {
+                f.classList.remove("active-folder");
                 f.style.zIndex = "10";
             });
-            folder.style.zIndex = "100";
+            if (!isOpen) {
+                folder.classList.add("active-folder");
+                folder.style.zIndex = "100";
+            }
+        });
+    });
+
+    document.addEventListener("click", function () {
+        folders.forEach(function (f) {
+            f.classList.remove("active-folder");
+            f.style.zIndex = "10";
         });
     });
 });
