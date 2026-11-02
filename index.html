@@ -1,376 +1,57 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Melissa Ramirez | Portafolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  
-  <style>
-    :root {
-      --bg-primary: #FFFDF9;
-      --bg-card: #FFFFFF;
-      --text-main: #2D2B2A;
-      --text-muted: #6E6A67;
-      --accent-purple: #BDB2FF;
-      --accent-pink: #FFC6FF;
-      --radius: 16px;
-    }
-
-    [data-theme="dark"] {
-      --bg-primary: #1A181B;
-      --bg-card: #262329;
-      --text-main: #F5F3F7;
-      --text-muted: #A8A2AC;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-    }
-
-    body {
-      background-color: var(--bg-primary);
-      color: var(--text-main);
-      line-height: 1.6;
-    }
-
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 8%;
-      background: var(--bg-primary);
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-
-    .logo {
-      font-size: 1.4rem;
-      font-weight: bold;
-      color: var(--text-main);
-      text-decoration: none;
-    }
-
-    nav {
-      display: flex;
-      gap: 15px;
-      align-items: center;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: var(--text-muted);
-      font-weight: bold;
-    }
-
-    .theme-toggle {
-      background: var(--bg-card);
-      border: 1px solid var(--accent-purple);
-      padding: 6px 12px;
-      border-radius: 20px;
-      cursor: pointer;
-      color: var(--text-main);
-    }
-
-    .hero {
-      padding: 60px 8%;
-    }
-
-    .hero h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 10px 20px;
-      border-radius: 25px;
-      text-decoration: none;
-      font-weight: bold;
-      cursor: pointer;
-      border: none;
-    }
-
-    .btn-primary {
-      background-color: var(--accent-purple);
-      color: #2D2B2A;
-    }
-
-    .btn-secondary {
-      background: transparent;
-      border: 2px solid var(--accent-purple);
-      color: var(--text-main);
-      margin-left: 10px;
-    }
-
-    .skills-section, .projects-section, .contact-section {
-      padding: 40px 8%;
-    }
-
-    .skills-grid, .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-      margin-top: 20px;
-    }
-
-    .skill-card, .project-card {
-      background: var(--bg-card);
-      padding: 20px;
-      border-radius: var(--radius);
-      border: 1px solid rgba(0,0,0,0.05);
-    }
-
-    .academy-banner {
-      background: #F3E8FF;
-      border-radius: var(--radius);
-      padding: 30px;
-      margin: 40px 8%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-
-    [data-theme="dark"] .academy-banner {
-      background: #2D213D;
-    }
-
-    .tag {
-      background: var(--accent-pink);
-      padding: 4px 10px;
-      border-radius: 12px;
-      font-size: 0.8rem;
-      font-weight: bold;
-    }
-
-    .academy-stats {
-      display: flex;
-      gap: 10px;
-      margin-top: 10px;
-      font-size: 0.9rem;
-    }
-
-    .filter-container {
-      display: flex;
-      gap: 10px;
-      margin: 15px 0;
-    }
-
-    .filter-btn {
-      background: var(--bg-card);
-      border: 1px solid #ccc;
-      padding: 6px 15px;
-      border-radius: 20px;
-      cursor: pointer;
-      color: var(--text-main);
-    }
-
-    .filter-btn.active {
-      background: var(--accent-purple);
-    }
-
-    .contact-form {
-      max-width: 400px;
-      background: var(--bg-card);
-      padding: 20px;
-      border-radius: var(--radius);
-      margin-top: 15px;
-    }
-
-    .contact-form input, .contact-form textarea {
-      width: 100%;
-      padding: 8px;
-      margin-top: 5px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      background: var(--bg-primary);
-      color: var(--text-main);
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: var(--text-muted);
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melissa Ramirez | Home</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header>
+        <div class="logo">
+            <h1>Melissa Ramirez</h1>
+        </div>
+        <nav class="menu">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About me</a>
+            <a href="projects.html">Main Projects</a>
+            <a href="contact.html">Contact me</a>
+        </nav>
+    </header>
 
-  <header>
-    <a href="#" class="logo">Melissa Ramirez</a>
-    <nav>
-      <a href="#habilidades">Habilidades</a>
-      <a href="#proyectos">Proyectos</a>
-      <a href="#academy">Melidan Academy</a>
-      <a href="#contacto">Contacto</a>
-      <button class="theme-toggle" id="themeToggle">
-        <i class="fa-solid fa-moon"></i>
-      </button>
-    </nav>
-  </header>
+    <main>
+        <section class="graphic-hero">
+            <span class="location-tag">DUBLIN, IRELAND</span>
+            <h2 class="giant-title top-title">Melissa Ramirez</h2>
+            <div class="image-stack-container">
+                <div class="stacked-card card-left">
+                    <img src="images/img2.jpg" alt="MSc Interactive Digital Media at Trinity College Dublin">
+                </div>
+                <div class="stacked-card card-center">
+                    <img src="images/img1.jpg" alt="Melissa Ramirez Portrait">
+                </div>
+                <div class="stacked-card card-right">
+                    <img src="images/img5.jpg" alt="International Master Graduation in Digital Marketing">
+                </div>
+            </div>
+            <p class="giant-title bottom-title">MECHANICAL ENGINEER</p>
+            <div class="hero-intro-text">
+                <p>Bridging technical engineering systems with creative digital experiences. Currently studying an MSc in Interactive Digital Media at Trinity College Dublin and Founder of Melidan Academy.</p>
+                <a href="projects.html" class="graphic-btn">Explore Main Projects</a>
+            </div>
+        </section>
 
-  <section class="hero">
-    <div class="hero-text">
-      <h1>¡Hola!<br>Soy <span id="typewriter"></span></h1>
-      <p>Diseñadora web & Creadora digital | Apasionada por crear experiencias interactivas y accesibles para todos.</p>
-      <div style="margin-top: 20px;">
-        <a href="#proyectos" class="btn btn-primary">Ver mis proyectos</a>
-        <a href="#contacto" class="btn btn-secondary">¡Hablemos!</a>
-      </div>
-    </div>
-  </section>
+        <section class="academy-hero-card">
+            <span>Featured EdTech Initiative</span>
+            <h3>Melidan Academy</h3>
+            <p>An educational platform helping LATAM professionals bridge technical skills with corporate English strategies to accelerate global careers.</p>
+            <a href="https://melissara99.github.io/melidanacademy/" target="_blank" class="graphic-btn">Visit Melidan Academy ↗</a>
+        </section>
+    </main>
 
-  <section id="habilidades" class="skills-section">
-    <h2>Habilidades</h2>
-    <div class="skills-grid">
-      <div class="skill-card">
-        <h3>HTML</h3>
-        <p>Estructura web</p>
-      </div>
-      <div class="skill-card">
-        <h3>CSS</h3>
-        <p>Diseño y estilos</p>
-      </div>
-      <div class="skill-card">
-        <h3>JavaScript</h3>
-        <p>Interactividad</p>
-      </div>
-      <div class="skill-card">
-        <h3>UX/UI</h3>
-        <p>Experiencia de usuario</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="academy" class="academy-banner">
-    <div>
-      <span class="tag">Proyecto Destacado</span>
-      <h2 style="margin-top: 10px;">Melidan Academy</h2>
-      <p>Plataforma educativa para profesionales enfocada en inglés corporativo técnico y estrategias para el crecimiento profesional.</p>
-      <div class="academy-stats">
-        <span>📄 Tech Resume Guide</span>
-        <span>💼 Método Estratégico</span>
-      </div>
-    </div>
-    <a href="https://melissara99.github.io/melidanacademy/" target="_blank" class="btn btn-primary">Visitar Sitio ↗</a>
-  </section>
-
-  <section id="proyectos" class="projects-section">
-    <h2>Proyectos</h2>
-    <div class="filter-container">
-      <button class="filter-btn active" onclick="filterProjects(event, 'all')">Todas</button>
-      <button class="filter-btn" onclick="filterProjects(event, 'web')">Diseño</button>
-      <button class="filter-btn" onclick="filterProjects(event, 'education')">Desarrollo</button>
-    </div>
-
-    <div class="projects-grid">
-      <div class="project-card" data-category="education web">
-        <h3>Melidan Academy</h3>
-        <p>Sitio web para el aprendizaje de inglés técnico corporativo y recursos digitales.</p>
-        <a href="https://melissara99.github.io/melidanacademy/" target="_blank">Ver más ↗</a>
-      </div>
-
-      <div class="project-card" data-category="web">
-        <h3>Tech Resume Guide</h3>
-        <p>Plantilla de CV optimizada para filtros ATS y preparación de entrevistas.</p>
-        <a href="https://melissara99.github.io/melidanacademy/tienda.html" target="_blank">Ver más ↗</a>
-      </div>
-
-      <div class="project-card" data-category="web">
-        <h3>Mi Portafolio</h3>
-        <p>Página personal estática desarrollada con HTML, CSS y JS.</p>
-        <a href="#">Ver más ↗</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="contacto" class="contact-section">
-    <h2>Contacto</h2>
-    <form class="contact-form" action="#" method="post">
-      <label for="fname">First name:</label><br>
-      <input type="text" id="fname" name="fname"><br>
-
-      <label for="lname">Last name:</label><br>
-      <input type="text" id="lname" name="lname"><br>
-
-      <label for="email">Email:</label><br>
-      <input type="email" id="email" name="email"><br>
-
-      <label for="message">Mensaje:</label><br>
-      <textarea id="message" name="message" rows="4"></textarea><br>
-
-      <button type="submit" class="btn btn-primary">Enviar</button>
-    </form>
-  </section>
-
-  <footer>
-    <p>© 2026 Melissa Ramirez</p>
-  </footer>
-
-  <script>
-    const words = ["Melissa Ramirez", "Diseñadora Web", "Creadora Digital"];
-    let wordIndex = 0;
-    let charIndex = 0;
-    let isDeleting = false;
-
-    function typeEffect() {
-      const currentWord = words[wordIndex];
-      const typewriterElement = document.getElementById("typewriter");
-
-      if (isDeleting) {
-        typewriterElement.textContent = currentWord.substring(0, charIndex - 1);
-        charIndex--;
-      } else {
-        typewriterElement.textContent = currentWord.substring(0, charIndex + 1);
-        charIndex++;
-      }
-
-      if (!isDeleting && charIndex === currentWord.length) {
-        isDeleting = true;
-        setTimeout(typeEffect, 1500);
-      } else if (isDeleting && charIndex === 0) {
-        isDeleting = false;
-        wordIndex = (wordIndex + 1) % words.length;
-        setTimeout(typeEffect, 500);
-      } else {
-        setTimeout(typeEffect, isDeleting ? 50 : 100);
-      }
-    }
-
-    typeEffect();
-
-    const themeToggle = document.getElementById("themeToggle");
-    themeToggle.addEventListener("click", () => {
-      const currentTheme = document.body.getAttribute("data-theme");
-      if (currentTheme === "dark") {
-        document.body.removeAttribute("data-theme");
-      } else {
-        document.body.setAttribute("data-theme", "dark");
-      }
-    });
-
-    function filterProjects(e, category) {
-      const cards = document.querySelectorAll(".project-card");
-      const buttons = document.querySelectorAll(".filter-btn");
-
-      buttons.forEach(btn => btn.classList.remove("active"));
-      e.target.classList.add("active");
-
-      cards.forEach(card => {
-        if (category === "all" || card.getAttribute("data-category").includes(category)) {
-          card.style.display = "block";
-        } else {
-          card.style.display = "none";
-        }
-      });
-    }
-  </script>
+    <footer>
+        <p>Copyright &copy;2026 - Created by Melissa Ramirez</p>
+    </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
