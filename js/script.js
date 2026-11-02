@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
             e.preventDefault();
             var emailInput = document.querySelector("#user-email");
             var email = emailInput ? emailInput.value : "";
-            alert("Thank you! Your message from " + email + " has been sent.");
+            alert("Thank you for contacting me! Your message from " + email + " has been sent.");
             contactForm.reset();
         });
     }
